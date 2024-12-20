@@ -1,0 +1,17 @@
+.post {
+    box-sizing: border-box;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid teal;
+    display: block;
+    padding: 10px;
+}
+
+.post__list{
+    border-collapse: collapse;
+    position: relative;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}

@@ -24,6 +24,5 @@ export const fetchUsers = createAsyncThunk(
         } catch (e) {
             return thunkAPI.rejectWithValue('Не удалось загрузить пользователей')
         }
-        
     }
 )
