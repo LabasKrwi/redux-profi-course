@@ -4,6 +4,8 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { setupStore } from './store/store';
 
+
+
 const store = setupStore();
 
 const root = ReactDOM.createRoot(
@@ -11,7 +13,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <Provider store={store}>
-      <App />
+        <App />
     </Provider>
-    
 );
