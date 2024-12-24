@@ -26,9 +26,9 @@ export const PostContainer = () => {
           <button onClick={handleCreate}>Add new post</button>
             {isLoading && <h1> Идет загрузка...</h1>}
             {error && <h1>Произошла ошибка загрузки постов</h1>}
-            {posts && posts.map( post =>
+            {/* {posts && posts.map( post =>
               <PostItem key={post.id} post={post}/>
-            )}
+            )} */}
         </div>
     </div>
   )
