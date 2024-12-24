@@ -4,7 +4,7 @@ import PostItem from './PostItem'
 import { IPost } from '../models/IPosts';
 
 export const PostContainer = () => { 
-    const [limit, setLimit] = useState(10);
+    const [limit, setLimit] = useState(100);
     const{data: posts, error, isLoading, refetch} = PostAPI.useFetchAllPostsQuery(limit)
     const [createPost, {}] = PostAPI.useCreatePostMutation()
 

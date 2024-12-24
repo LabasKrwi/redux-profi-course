@@ -3,13 +3,15 @@ import { IPost } from '../models/IPosts'
 
 interface PostItemProps {
     post: IPost;
+    remove: (post: IPost) => void;
+    update: (post: IPost) => void;
 }
 
 const PostItem: FC<PostItemProps> = ({post}) => {
   return (
     <div className='post'>
         {post.id}. {post.title}
-        <button>Delete</button>
+        <button onClick={()=> remove()}>Delete</button>
     </div>
   )
 }
